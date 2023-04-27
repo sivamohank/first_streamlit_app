@@ -23,10 +23,10 @@ fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.in
 
 
 
-if fruits_selected:
-    fruits_to_show = my_fruit_list.loc[fruits_selected]
-else:
-    fruits_to_show = my_fruit_list
+# if fruits_selected:
+fruits_to_show = my_fruit_list.loc[fruits_selected]
+# else:
+#     fruits_to_show = my_fruit_list
 
 
 # Display the table on the page.
