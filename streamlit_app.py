@@ -1,5 +1,4 @@
-pip install snowflake-connector-python
-import snowflake.connector
+
 import streamlit
 import pandas
 import requests
@@ -50,3 +49,4 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 #output it the screen as a table
 streamlit.dataframe(fruityvice_normalized)
 
+import snowflake.connector
